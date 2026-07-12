@@ -5,15 +5,10 @@ crab — agent shell for entering and leaving repos (shells).
 Like entering a MUD room: step into a repo, use its tools, step out.
 """
 
-from .crab import CrabShell, CrabError, ToolDef, ShellEntry, WatchEntry, FollowEntry, main
+from .crab import CrabShell, main
 
 __all__ = [
     "CrabShell",
-    "CrabError",
-    "ToolDef",
-    "ShellEntry",
-    "WatchEntry",
-    "FollowEntry",
     "main",
 ]
 

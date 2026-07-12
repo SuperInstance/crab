@@ -243,6 +243,7 @@ def main():
     parser = argparse.ArgumentParser(description="crab — enter and leave repos")
     parser.add_argument("command", nargs="?", default="status")
     parser.add_argument("args", nargs="*", help="Command arguments")
+    parser.add_argument("--version", action="version", version="crab 0.1.0")
     args = parser.parse_args()
     
     shell = CrabShell()

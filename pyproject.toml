@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crab"
+version = "0.1.0"
+description = "Hermit crab agent shell — agents find repos, grow, move shells"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+crab = "crab.crab:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
